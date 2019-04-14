@@ -1,0 +1,33 @@
+{
+    "name": "loyaltylu/cut-file-upload",
+    "description": "laravel-admin qiniu cut file ",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/LoyaltyLu/cut-file-upload",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "luzhong",
+            "email": "979126035@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6",
+        "peinhu/aetherupload-laravel": "~1.0",
+        "zgldh/qiniu-laravel-storage": "^0.10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\CutFileUpload\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\CutFileUpload\\CutFileUploadServiceProvider"
+            ]
+        }
+    }
+}
